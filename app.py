@@ -8,7 +8,7 @@ app = Flask(__name__)
 model = pickle.load(open('model_LR.pkl', 'rb'))
 @app.route('/',methods=['GET'])
 def Home():
-	return render_template('Bank.html')
+	return render_template('bank.html')
         
 @app.route("/predict", methods=['POST'])
 def predict():
@@ -35,10 +35,10 @@ def predict():
 		nr.employed = int(request.form.get('nr.employed',False))
 		output=prediction[0]
 		
-		return render_template('Bank.html',prediction_text="You Fall into category:-  {}".format(output))
+		return render_template('bank.html',prediction_text="You Fall into category:-  {}".format(output))
 		
 	else:
-		return render_template('Bank.html')
+		return render_template('bank.html')
 		
         
 if __name__=="__main__":
