@@ -33,6 +33,7 @@ def predict():
 		cons_conf_idx = int(request.form.get('cons_conf_idx',False))
 		euribor3m = int(request.form.get('euribor3m',False))
 		nr_employed = int(request.form.get('nr_employed',False))
+		prediction=model.predict([[age,job,marital,education,default,housing,loan,contact,month,day_of_week,duration,campaign,pdays,previous,poutcome,emp_var_rate,cons_price_idx,cons_conf_idx,euribor3m,nr_employed]])
 		output=prediction[0]
 		
 		return render_template('bank.html',prediction_text="You Fall into category:-  {}".format(output))
