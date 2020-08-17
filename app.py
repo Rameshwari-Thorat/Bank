@@ -35,8 +35,12 @@ def predict():
 		nr_employed = int(request.form.get('nr_employed',False))
 		prediction=model.predict([[age,job,marital,education,default,housing,loan,contact,month,day_of_week,duration,campaign,pdays,previous,poutcome,emp_var_rate,cons_price_idx,cons_conf_idx,euribor3m,nr_employed]])
 		output=prediction[0]
+		if output==1:
+			a = "will"
+		else:
+			a = "will not"
 		
-		return render_template('bank.html',prediction_text="You Fall into category:-  {}".format(output))
+		return render_template('bank.html',prediction_text="This customer {}".format(a) + " subscribe to the term deposit")
 		
 	else:
 		return render_template('bank.html')
