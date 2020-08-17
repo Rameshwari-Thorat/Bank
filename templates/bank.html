@@ -27,7 +27,7 @@
 				<option value = "10">unemployed</option>
 				<option value = "11">unknown</option>
 			</select>
-			<h3> Marital</h3><select name = "marital" id = "emp_marital" required = "required">
+			<h3> Marital Status</h3><select name = "marital" id = "emp_marital" required = "required">
 				<option value = "0">divorced</option>
 				<option value = "1">married</option>
 				<option value = "2">single</option>
@@ -43,7 +43,7 @@
 				<option value = "6">university.degree</option>
 				<option value = "7">unknown</option>
 			</select>
-			<h3> Default</h3><select name = "default" id = "emp_default" required = "required">
+			<h3> Have credit in Default?</h3><select name = "default" id = "emp_default" required = "required">
 				<option value = "0">no</option>
 				<option value = "2">yes</option>
 				<option value = "1">unknown</option>
@@ -53,7 +53,7 @@
 				<option value = "2">yes</option>
 				<option value = "1">unknown</option>
 			</select>
-			<h3> Loan</h3><select name = "loan" id = "emp_loan" required = "required">
+			<h3> Have personal loan?</h3><select name = "loan" id = "emp_loan" required = "required">
 				<option value = "0">no</option>
 				<option value = "2">yes</option>
 				<option value = "1">unknown</option>
@@ -62,7 +62,7 @@
 				<option value = "0">cellular</option>
 				<option value = "1">telephone</option>
 				</select>
-			<h3> Month</h3><select name = "month" id = "emp_month" required = "required">
+			<h3> Last contact month of the year</h3><select name = "month" id = "emp_month" required = "required">
 				<option value = "0">apr</option>
 				<option value = "1">aug</option>
 				<option value = "2">dec</option>
@@ -74,42 +74,42 @@
 				<option value = "8">oct</option>
 				<option value = "9">sep</option>
 			</select>
-			<h3> Day of Week</h3><select name = "day_of_week" id = "emp_day_of_week" required = "required">
+			<h3> Last contact day of the week</h3><select name = "day_of_week" id = "emp_day_of_week" required = "required">
 				<option value = "0">fri</option>
 				<option value = "1">mon</option>
 				<option value = "2">thu</option>
 				<option value = "3">tue</option>
 				<option value = "4">wed</option>
 				</select>
-			<h3> Duration</h3>
+			<h3> Last contact duration in seconds</h3>
 			<input id = "second" name = "duration" type = "number">
 			</select>
-			<h3> Campaign</h3>
+			<h3> No. of contacts performed during this campaign</h3>
 			<input id = "third" name = "campaign" type = "number">
 			</select>
-			<h3> Pdays</h3>
+			<h3> No.of days passed after the last contact from a previous campaign</h3>
 			<input id = "forth" name = "pdays" type = "number">
 			</select>
-			<h3> Previous</h3>
+			<h3> No.of contacts performed before this campaign</h3>
 			<input id = "fifth" name = "previous" type = "number">
 			</select>
-			<h3> Poutcome</h3><select name = "Income_Verified" id = "inc_verified" required = "required">
+			<h3> Outcome of the previous marketing campaign</h3><select name = "Income_Verified" id = "inc_verified" required = "required">
 				<option value = "0">failure</option>
 				<option value = "1">nonexistent</option>
 				<option value = "2">success</option>
 			</select>
-			<h3>Emp_Var_Rate</h3>
+			<h3> Employment variation rate (Quarterly indicator)</h3>
 			<input id = "sixth" name = "emp_var_rate" type = "number">
-			<h3>Cons_price_idx</h3>
+			<h3> Consumer price index (Monthly indicator)</h3>
 			<input id = "seventh" name = "cons_price_idx" type = "number">
-			<h3>Cons_conf_idx </h3>
+			<h3> Consumer confidence index (Monthly indicator)</h3>
 			<input id = "eighth" name = "cons_conf_idx " type = "number">
-			<h3>Euribor3m</h3>
+			<h3> Euribor 3 month rate</h3>
 			<input id = "nineth" name = "euribor3m" type = "number">
-			<h3>nr_employed </h3>
+			<h3> No.of employees (Quarterly indicator) </h3>
 			<input id = "tenth" name "nr_employed " type = "number">
 			</select>	
-			<br><br><br><button id="sub" type="submit ">Predict whether term is subscribed or not</button>
+			<br><br><br><button id="sub" type="submit ">Check the status of Term Deposit</button>
 			<br>
 			
 			
